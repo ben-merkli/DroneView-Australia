@@ -22,16 +22,17 @@
       background-color: #1c1c1c;
       padding: 20px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       border-bottom: 2px solid #333;
+      flex-wrap: wrap;
     }
     header img {
       width: 120px;
       height: auto;
+      margin-right: 20px;
     }
     .header-text {
-      flex: 1;
       text-align: center;
     }
     .header-text h1 {
@@ -91,31 +92,35 @@
     .footer-top {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
       align-items: flex-start;
       padding: 40px 20px;
       background-color: #1c1c1c;
       text-align: left;
+      gap: 40px;
     }
     .footer-col {
       flex: 1;
       min-width: 200px;
-      margin: 20px;
+      max-width: 300px;
     }
     .footer-col h3 {
       font-size: 18px;
       margin-bottom: 15px;
+      text-align: left;
     }
     .footer-col p, .footer-col a {
       font-size: 16px;
       color: #ccc;
       display: block;
       margin-bottom: 10px;
+      text-align: left;
     }
     .social-icons a {
       margin-right: 10px;
       font-size: 20px;
       color: #ccc;
+      display: inline-block;
     }
     .social-icons a:hover {
       color: #00bfff;
@@ -179,9 +184,9 @@
       <h3>DroneView Australia</h3>
       <p>Professional drone photography & videography in Melbourne.</p>
       <div class="social-icons">
-        <a href="#"><span>&#x1F426;</span> Facebook</a>
-        <a href="#"><span>&#x1F4F7;</span> Instagram</a>
-        <a href="#"><span>&#x1F465;</span> LinkedIn</a>
+        <a href="#">📘 Facebook</a>
+        <a href="#">📸 Instagram</a>
+        <a href="#">💼 LinkedIn</a>
       </div>
     </div>
     <div class="footer-col">
