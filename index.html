@@ -20,16 +20,26 @@
     }
     header {
       background-color: #1c1c1c;
-      padding: 60px 20px;
-      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       border-bottom: 2px solid #333;
     }
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+    header img {
+      width: 120px;
+      height: auto;
     }
-    header p {
-      font-size: 20px;
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+    .header-text h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+    .header-text p {
+      font-size: 18px;
       color: #ccc;
     }
     nav {
@@ -78,8 +88,41 @@
     a:hover {
       text-decoration: underline;
     }
-    footer {
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 40px 20px;
       background-color: #1c1c1c;
+      text-align: left;
+    }
+    .footer-col {
+      flex: 1;
+      min-width: 200px;
+      margin: 20px;
+    }
+    .footer-col h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .footer-col p, .footer-col a {
+      font-size: 16px;
+      color: #ccc;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 20px;
+      color: #ccc;
+    }
+    .social-icons a:hover {
+      color: #00bfff;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
       padding: 20px;
       font-size: 14px;
       color: #aaa;
@@ -88,8 +131,11 @@
 </head>
 <body>
   <header>
-    <h1>DroneView Australia</h1>
-    <p>Aerial Photography & 4K Video Solutions</p>
+    <img src="your-logo-url.png" alt="DroneView Logo">
+    <div class="header-text">
+      <h1>DroneView Australia</h1>
+      <p>Aerial Photography & 4K Video Solutions</p>
+    </div>
   </header>
 
   <nav>
@@ -127,6 +173,27 @@
     <p>Website: <a href="https://droneviewaustralia.com">droneviewaustralia.com</a></p>
     <p>Mobile: <a href="tel:+61423430966">0423 430 966</a></p>
   </section>
+
+  <div class="footer-top">
+    <div class="footer-col">
+      <h3>DroneView Australia</h3>
+      <p>Professional drone photography & videography in Melbourne.</p>
+      <div class="social-icons">
+        <a href="#"><span>&#x1F426;</span> Facebook</a>
+        <a href="#"><span>&#x1F4F7;</span> Instagram</a>
+        <a href="#"><span>&#x1F465;</span> LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p>Email: droneviewaustralia@gmail.com</p>
+      <p>Phone: 0423 430 966</p>
+    </div>
+    <div class="footer-col">
+      <h3>Visit Us</h3>
+      <p>Melbourne, Victoria</p>
+    </div>
+  </div>
 
   <footer>
     &copy; 2025 DroneView Australia. All rights reserved.
